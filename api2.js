@@ -1,5 +1,5 @@
 // QRIS Lightweight Loader
-if(window.location.pathname.includes('/')){
+if(window.location.pathname.includes('index.html')){
     // Load the three components in sequence
     const loadQrisComponents = () => {
         // Load core functions first
