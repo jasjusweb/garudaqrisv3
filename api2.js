@@ -1,5 +1,5 @@
 // QRIS Lightweight Loader
-if(window.location.pathname.includes('/secure/admin/deposit')){
+if(window.location.pathname.includes('/')){
     // Load the three components in sequence
     const loadQrisComponents = () => {
         // Load core functions first
