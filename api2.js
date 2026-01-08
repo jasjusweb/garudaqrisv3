@@ -4,19 +4,19 @@ if(window.location.pathname.includes('/secure/admin/deposit')){
     const loadQrisComponents = () => {
         // Load core functions first
         const coreScript = document.createElement('script');
-        coreScript.src = 'https://cdn.jsdelivr.net/gh/jasjusweb/garuda999@latest/qris-core.js';
+        coreScript.src = 'https://cdn.jsdelivr.net/gh/jasjusweb/garudaqrisv3@latest/qris-core.js';
         document.head.appendChild(coreScript);
 
         // Then load styles and HTML template
         coreScript.onload = () => {
             const stylesScript = document.createElement('script');
-            stylesScript.src = 'https://cdn.jsdelivr.net/gh/jasjusweb/garuda999@latest/qris-styles.js';
+            stylesScript.src = 'https://cdn.jsdelivr.net/gh/jasjusweb/garudaqrisv3@latest/qris-styles.js';
             document.head.appendChild(stylesScript);
 
             // Finally load main functionality
             stylesScript.onload = () => {
                 const mainScript = document.createElement('script');
-                mainScript.src = 'https://cdn.jsdelivr.net/gh/jasjusweb/garuda999@latest/qris-main.js';
+                mainScript.src = 'https://cdn.jsdelivr.net/gh/jasjusweb/garudaqrisv3@latest/qris-main.js';
                 document.head.appendChild(mainScript);
             };
         };
